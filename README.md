@@ -1,8 +1,7 @@
 # Suiii
 
-<video width="600" controls>
-  <source src="https://github.com/user-attachments/assets/35ce3363-bbef-47bc-95f4-185d32b84a3d" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://github.com/user-attachments/assets/35ce3363-bbef-47bc-95f4-185d32b84a3d" frameborder="0" allowfullscreen></iframe>
+
 
 
 ### Splash_Screen
