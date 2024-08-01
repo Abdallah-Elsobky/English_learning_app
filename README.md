@@ -1,7 +1,6 @@
 # Suiii
 
-<iframe width="560" height="315" src="https://github.com/user-attachments/assets/35ce3363-bbef-47bc-95f4-185d32b84a3d" frameborder="0" allowfullscreen></iframe>
-
+https://github.com/user-attachments/assets/35ce3363-bbef-47bc-95f4-185d32b84a3d
 
 
 ### Splash_Screen
