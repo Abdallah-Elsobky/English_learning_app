@@ -12,8 +12,7 @@
 
 ### Drinks
 
-<img src="https://github.com/user-attachments/assets/e4b189bf-a8f9-476e-9103-7055514a2e22
-" width="300" height="600">
+<img src="https://github.com/user-attachments/assets/e4b189bf-a8f9-476e-9103-7055514a2e22" width="300" height="600">
 
 ### Family
 
