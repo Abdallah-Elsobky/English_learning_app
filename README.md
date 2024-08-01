@@ -2,7 +2,6 @@
 
 <video width="600" controls>
   <source src="https://github.com/user-attachments/assets/35ce3363-bbef-47bc-95f4-185d32b84a3d" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
 
 
