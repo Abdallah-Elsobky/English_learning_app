@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FamilyActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/colorback" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="350dp"
+        android:layout_height="700dp"
+        android:background="@drawable/text_bk"
+        android:backgroundTint="#4E4B4C"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/oldman"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80F1D0A4"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/oldman" />
+
+            <ImageView
+                android:id="@+id/oldwoman"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80FEDCCD"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/oldwoman" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/father"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80908190"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/father" />
+
+            <ImageView
+                android:id="@+id/mom"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80D0996E"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/mom" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/boy"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80EFA37D"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/boy" />
+
+            <ImageView
+                android:id="@+id/sister"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80FEDCCE"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/sister" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/baby"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80F9B890"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/baby" />
+
+            <ImageView
+                android:id="@+id/children"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#808187CA"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/children" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Family Members"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

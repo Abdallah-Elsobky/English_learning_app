@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FEFEFE"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/colorback" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="350dp"
+        android:layout_height="700dp"
+        android:background="@drawable/text_bk"
+        android:backgroundTint="#4E4B4C"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/foods"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80FEFEFE"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/diet" />
+
+            <ImageView
+                android:id="@+id/drinks"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80D0E6F7"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/drink" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/family"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80FDC8A2"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/family" />
+
+            <ImageView
+                android:id="@+id/animals"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80B17946"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/livestock" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/colors"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80FFFFFF"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/colors" />
+
+            <ImageView
+                android:id="@+id/footballers"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#8071C184"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/football" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/shapes"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#8000A9DE"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/shapes" />
+
+            <ImageView
+                android:id="@+id/tools"
+                android:layout_width="300dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbutton_bk"
+                android:backgroundTint="#80D6E2F1"
+                android:backgroundTintMode="src_over"
+                android:padding="20dp"
+                app:srcCompat="@drawable/toolbox" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Choose Category"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
