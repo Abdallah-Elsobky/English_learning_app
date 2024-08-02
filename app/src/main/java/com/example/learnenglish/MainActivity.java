@@ -3,6 +3,7 @@ package com.example.learnenglish;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuAdapter;
 
 import java.util.ArrayList;
 
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-
+        MediaPlayer click = MediaPlayer.create(MainActivity.this,R.raw.click);
         categoryImages = new ArrayList<>();
         activityClasses = new ArrayList<>();
         categoryNames = new ArrayList<>();
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     animateClick(view);
+                    click.start();
                     view.postDelayed(new Runnable() {
                         @Override
                         public void run() {
@@ -73,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                             Toast.makeText(MainActivity.this, categoryNames.get(index), Toast.LENGTH_SHORT).show();
                         }
-                    }, 200);
+                    }, 100);
                 }
             });
         }
